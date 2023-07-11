@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+<!--Button executing java script hello get turned into good bye -->
+    <button onclick="dosomething()" style="font-size: 20px; background-color:aliceblue; border-radius: 25px;">
+        Click me
+    </button>
+    <p id="greeting">Hello</p>
+    <script>
+        function dosomething(){
+            document.getElementById("greeting").innerHTML="goodbye";
+
+        }
+    </script>
+    <hr>
+    <!--Normal button -->
+    <button style="background-color: yellowgreen ; font-size: larger; border-radius: 30px;">
+        Click me 
+    </button>
+    <hr>
+    <!--Button with embebed code to bring up another local html file-->
+    <a href="tables.html" target="_blank">
+        <button style="font-size: 20px; background-color:blanchedalmond; border-radius: 25px;">
+          Click me
+        </button>
+    </a>
+    <hr>
+    <!--Button with embebed code to bring up another link youtube video-->
+    <a href="https://www.youtube.com" target="_blank">
+        <button style="font-size: 20px; background-color:paleturquoise; border-radius: 25px;">
+          Click me
+        </button>
+    </a>
+</body>
+</html>
